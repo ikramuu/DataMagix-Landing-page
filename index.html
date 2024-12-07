@@ -65,7 +65,8 @@
 
     /* HERO SECTION */
     .hero {
-      background-color: #6a1b9a;
+      background-image: url('https://source.unsplash.com/1600x900/?data-analytics');
+      background-size: cover;
       color: #fff;
       padding: 80px 20px;
       text-align: center;
@@ -84,7 +85,7 @@
 
     .hero .btn {
       background-color: #fff;
-      color: #6a1b9a;
+      color: #6a1b9a; /* Viola principale */
       font-weight: bold;
       padding: 15px 30px;
       border-radius: 30px;
@@ -94,7 +95,7 @@
     }
 
     .hero .btn:hover {
-      background-color: #9c4dcc;
+      background-color: #9c4dcc; /* Viola scuro */
       color: #fff;
     }
 
@@ -116,206 +117,232 @@
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-    }  
+    }
 
     .services .card {
-      background: #f4f4f4;
-      border-radius: 15px;
+      background-color: #f4f4f4; 
+      border-radius: 15px; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 350px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
+      max-width: 350px; 
+      padding: 20px; 
+      text-align: center; 
+      transition: transform 0.3s, box-shadow 0.3s; 
     }
 
     .services .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    }
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+     }
 
-    .services .card img {
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+     .services .card img { 
+         border-radius :10 px; 
+         margin-bottom :20 px; 
+     }
+     
+     .services .card h3 { 
+         font-size :1.3 rem; 
+         color :#333; 
+         margin-bottom :10 px; 
+     }
+     
+     /* SEZIONE VANTAGGI */
+     .benefits { 
+         background-color :#6a1b9a; 
+         color :#fff; 
+         padding :60 px ; 
+         text-align :center; 
+     }
+     
+     .benefits h2 { 
+         font-size :2 rem; 
+         margin-bottom :20 px; 
+     }
+     
+     .benefits ul { 
+         list-style :none; 
+         padding :0; 
+     }
+     
+     .benefits ul li { 
+         margin-bottom :10 px ; 
+         font-size :1.2 rem ; 
+     }
+     
+     /* SEZIONE TESTIMONIANZE */
+     .testimonials { 
+         background-color :#f4f4f4 ;  
+         padding :60 px ;  
+     }
+     
+     .testimonials h2 {  
+         font-size :2 rem ;  
+         text-align :center ;  
+         margin-bottom :30 px ;  
+     }
+     
+     .testimonials .testimonial {  
+         max-width :800 px ;  
+         margin :0 auto ;  
+         text-align :center ;  
+         font-style :italic ;  
+         color :#555 ;  
+     }
+     
+     /* FAQ */
+     .faq {  
+         background-color :#fff ;  
+         padding :60 px ;  
+         text-align :center ;  
+     }
+     
+     .faq h2 {  
+         font-size :2 rem ;  
+         margin-bottom :20 px ;  
+     }
+     
+     .faq p {  
+         max-width :800 px ;  
+         margin :0 auto ;  
+         color :#555 ;  
+     }
+     
+     /* CTA */
+     .cta {   
+        background-color:#6a1b9a;   
+        color:#fff;   
+        text-align:center;   
+        padding:50px20px;   
+     }   
+     
+     .cta h2 {   
+        font-size=2rem;   
+        margin-bottom=20px;   
+     }   
+     
+     .cta.btn{   
+        background-color:#fff;   
+        color:#6a1b9a;   
+        padding=15px30px;   
+        border-radius=30px;   
+        text-transform=uppercase;   
+        font-weight:bold;   
+        transition=background-color=0.3s,color=0.3s;}   
 
-    .services .card h3 {
-      font-size: 1.3rem;
-      color: #333;
-      margin-bottom: 10px;
-    }
+   /* FOOTER */    
+   footer{    
+       background-color:#333;    
+       color:#fff;    
+       text-align:center;    
+       padding=20px;}  
 
-    /* SEZIONE VANTAGGI */
-    .benefits {
-      background-color: #6a1b9a;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
+   </style>    
+</head>    
+<body>    
+<!-- HEADER -->    
+<header class="header">    
+<div class="logo">    
+<img src="Black and Blue Initials Creative Logo (3).png" alt="Logo DataMagix">    
+</div>    
+<nav>    
+<ul>    
+<li><a href="#services">Servizi</a></li>    
+<li><a href="#testimonials">Testimonianze</a></li>    
+<li><a href="#faq">FAQ</a></li>    
+<li><a href="#cta">Contattaci</a></li>    
+</ul>    
+</nav>    
+</header>    
 
-    .benefits h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+<!-- HERO SECTION -->    
+<section class="hero">    
+<h1>I Dati Parlano:</h1>    
+<p>Scopri come possiamo trasformare i tuoi dati in vantaggi competitivi per la tua azienda.</p>    
+<a href="#services" class="btn">Scopri di più</a>    
+</section>    
 
-    .benefits ul {
-      list-style: none;
-      padding: 0;
-    }
+<!-- SEZIONE SERVIZI -->    
+<section id="services" class="services">    
+<h2>Le Nostre Soluzioni</h2>    
+<div class="cards">    
+<div class="card">    
+<img src="https://source.unsplash.com/350x200/?data" alt="Analisi Avanzata">    
+<h3>Analisi Predittiva</h3>    
+<p>Prevedi trend futuri per prendere decisioni basate sui dati.</p>    
+</div>    
 
-    .benefits ul li {
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
+<div class="card">    
+<img src="https://source.unsplash.com/350x200/?analytics" alt="Dashboard">    
+<h3>Dashboard Intelligenti</h3>    
+<p>Visualizza le metriche chiave in tempo reale con soluzioni interattive.</p>    
+</div>    
 
-    /* SEZIONE TESTIMONIANZE */
-    .testimonials {
-      background-color: #f4f4f4;
-      padding: 60px 20px;
-    }
+</div>    
 
-    .testimonials h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+</section>
 
-    .testimonials .testimonial {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      font-style: italic;
-      color: #555;
-    }
+<!-- SEZIONE VANTAGGI -->    
 
-    /* FAQ */
-    .faq {
-      background-color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
+<section class="benefits">    
 
-    .faq h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+<h2>Perché Sceglierci?</h2>
 
-    .faq p {
-      max-width: 800px;
-      margin: 0 auto;
-      color: #555;
-    }
+<ul>
 
-    /* CTA */
-    .cta {
-      background-color: #6a1b9a;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
+<li>✔ Soluzioni personalizzate per ogni azienda.</li>
 
-    .cta h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+<li>✔ Esperti in Big Data e Machine Learning.</li>
 
-    .cta .btn {
-      background-color: #fff;
-      color: #6a1b9a;
-      padding: 15px 30px;
-      border-radius: 30px;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: background-color 0.3s, color 0.3s;
-    }
+<li>✔ Assistenza continua e supporto.</li>
 
-    .cta .btn:hover {
-      background-color: #9c4dcc;
-      color: #fff;
-    }
+</ul>
 
-    /* FOOTER */
-    .footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">
-      <img src="Black and Blue Initials Creative Logo (3).png" alt="Logo DataMagix">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#services">Servizi</a></li>
-        <li><a href="#testimonials">Testimonianze</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#cta">Contattaci</a></li>
-      </ul>
-    </nav>
-  </header>
+</section>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>I Dati Parlano: Noi Ti Aiutiamo ad Ascoltarli</h1>
-    <p>Scopri come possiamo trasformare i tuoi dati in vantaggi competitivi per la tua azienda.</p>
-    <a href="#services" class="btn">Scopri di più</a>
-  </section>
+<!-- TESTIMONIALS -->
 
-  <!-- SEZIONE SERVIZI -->
-  <section id="services" class="services">
-    <h2>Le Nostre Soluzioni</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://source.unsplash.com/350x200/?data" alt="Analisi Avanzata">
-        <h3>Analisi Predittiva</h3>
-        <p>Prevedi trend futuri per prendere decisioni basate sui dati.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/350x200/?analytics" alt="Dashboard">
-        <h3>Dashboard Intelligenti</h3>
-        <p>Visualizza le metriche chiave in tempo reale con soluzioni interattive.</p>
-      </div>
-    </div>
-  </section>
+<section id="testimonials" class="testimonials">
 
-  <!-- SEZIONE VANTAGGI -->
-  <section class="benefits">
-    <h2>Perché Sceglierci?</h2>
-    <ul>
-      <li>✔ Soluzioni personalizzate per ogni azienda.</li>
-      <li>✔ Esperti in Big Data e Machine Learning.</li>
-      <li>✔ Assistenza continua e supporto.</li>
-    </ul>
-  </section>
+<h2>Le Testimonianze dei Nostri Clienti</h2>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="testimonials">
-    <h2>Le Testimonianze dei Nostri Clienti</h2>
-    <div class="testimonial">
-      <p>"Grazie a DataMagix abbiamo aumentato la nostra produttività del 30% e preso decisioni più consapevoli!"</p>
-      <p>- Marco Rossi, CEO di Azienda X</p>
-    </div>
-  </section>
+<div class="testimonial">
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
-    <h2>Domande Frequenti</h2>
-    <p>Hai domande? Consulta le FAQ o contattaci direttamente per maggiori informazioni.</p>
-  </section>
+<p>"Grazie a DataMagix abbiamo aumentato la nostra produttività del
 
-  <!-- CTA -->
-  <section id="cta" class="cta">
-    <h2>Vuoi Saperne di Più?</h2>
-    <a href="#services" class="btn">Contattaci Ora</a>
-  </section>
+30% e preso decisioni più consapevoli!"</p>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2024 DataMagix. Tutti i diritti riservati.</p>
-  </footer>
+<p>- Marco Rossi, CEO di Azienda X</p>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section id="faq" class="faq">
+
+<h2>Domande Frequenti</h2>
+
+<p>Hai domande? Consulta le FAQ o contattaci direttamente per maggiori informazioni.</p>
+
+</section>
+
+<!-- CTA -->
+
+<section id="cta" class="cta">
+
+<h2>Vuoi Saperne di Più?</h2>
+
+<a href="#services" class="btn">Contattaci Ora</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<p>&copy;2024 DataMagix.Tutti i diritti riservati.</p>
+
+</footer>
+
 </body>
 </html>
