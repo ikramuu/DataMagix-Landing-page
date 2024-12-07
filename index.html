@@ -59,14 +59,24 @@
 
     /* HERO SECTION */
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      position: relative;
       text-align: center;
-      padding: 100px 20px;
-      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fERhdGF8ZW58MHx8fHwxNjgxNzYxMzQy&ixlib=rb-1.2.1&q=80&w=1920') no-repeat center center/cover;
       color: #fff;
+      padding: 100px 20px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
     }
 
     .hero h1 {
@@ -219,9 +229,12 @@
 
   <!-- HERO SECTION -->
   <section class="hero">
-    <h1>I Dati Parlano: Noi Ti Aiutiamo ad Ascoltarli</h1>
-    <p>Potenzia il tuo business con l’analisi avanzata dei dati.</p>
-    <a href="#services" class="btn">Scopri di più</a>
+    <img src="Progetto senza titolo (7).png" alt="Hero Image">
+    <div class="hero-content">
+      <h1>I Dati Parlano: Noi Ti Aiutiamo ad Ascoltarli</h1>
+      <p>Potenzia il tuo business con l’analisi avanzata dei dati.</p>
+      <a href="#services" class="btn">Scopri di più</a>
+    </div>
   </section>
 
   <!-- SEZIONE SERVIZI -->
@@ -268,3 +281,4 @@
   </footer>
 </body>
 </html>
+
