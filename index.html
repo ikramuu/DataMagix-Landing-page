@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataMagix - Data Analytics Solutions</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Header Styles */
+    header {
+      background-color: #7f3dff;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p.description {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #ff6b6b;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ff4d4d;
+    }
+
+    /* Features Section Styles */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 3rem;
+    }
+
+    .feature {
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #7f3dff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    /* Testimonials Section Styles */
+    .testimonials {
+      background-color: #f4f4f4;
+      padding: 3rem;
+    }
+
+    .testimonials h2 {
+      color: #7f3dff;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial p {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial cite {
+      color: #7f3dff;
+      font-style: italic;
+    }
+
+    /* Contact Form Section Styles */
+    .contact {
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #7f3dff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    form input,
+    form textarea {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      padding: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    form button {
+      @extend .cta-button;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The data speaks: we help you listen</h1>
+    <p class="description">Discover how to transform data into competitive advantages with our advanced Data Analytics solutions.</p>
+    <a href="#" class="cta-button">Request a Free Demo</a>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Predictive Analytics</h3>
+      <p>Anticipate the future with clear data.</p>
+    </div>
+    <div class="feature">
+      <h3>Interactive Dashboards</h3>
+      <p>View your metrics in real-time.</p>
+    </div>
+    <div class="feature">
+      <h3>Continuous Support</h3>
+      <p>We're by your side in every step.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"Thanks to them, we've optimized our decision-making processes in the company!"</p>
+      <cite>- Mario R.</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Impeccable service and results beyond expectations."</p>
+      <cite>- Sara B.</cite>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Request a Free Consultation</h2>
+    <p>Leave your details and we'll reach out within 24 hours to show you how we can help.</p>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="cta-button">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
